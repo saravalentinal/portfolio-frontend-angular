@@ -1,0 +1,28 @@
+nav{
+    position: fixed;
+    background-color: #0F0C0F;
+    color: #F8F4DB;
+    width: 100%;
+}
+
+nav div p{
+    font-weight: 300;
+}
+
+nav div{
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav div ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+nav ul li{
+    padding: 10px;
+}

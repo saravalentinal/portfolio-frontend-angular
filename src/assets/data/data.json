@@ -1,0 +1,69 @@
+{
+  "header": {
+    "name": "VALENTINALATYN"
+  },
+    "nav": [
+      {
+        "option": "HOME"
+      },
+      {
+        "option": "ABOUT"
+      },
+      {
+        "option": "SKILLS"
+      },
+      {
+        "option": "PROJECTS"
+      },
+      {
+        "option": "CONTACT"
+      },
+      {
+        "option": "LNG" 
+      }],
+      "landingSection":
+      {
+        "hello":"Hola, soy ",
+        "name": "Valentina",
+        "job": "desarrolladora Web ",
+        "fullStack": "Full-Stack",
+        "img": "https://www.origastock.com/images/3d-characters/download/14.png"
+      },
+      "about": 
+      {
+        "me": "Sobre mí",
+        "name": "Mi nombre es ",
+        "valentina": "Sara Valentina Latyn, ",
+        "iAm": "soy ",
+        "nation": "argentina ",
+        "iHave": "y tengo ",
+        "number": "24 ",
+        "years":"años"
+      },
+      "cards": [
+      {
+        "desc": "Me gusta aprender nuevos idiomas. Puedo hablar español, inglés y alemán.",
+        "img":"https://www.origastock.com/images/3d-characters/download/14.png"
+      },
+      {
+        "desc": "Me interesan los medios audiovisuales. Soy fotógrafa, animadora y filmmaker.",
+        "img":"https://www.origastock.com/images/3d-characters/download/14.png"
+      },
+      {
+        "desc": "Camino seguido en la naturaleza y disfruto haciendo yoga en mi casa.",
+        "img":"https://www.origastock.com/images/3d-characters/download/14.png"
+      },
+      {
+        "desc": "Me encanta leer y elegir nuevos temas que me generan curiosidad.",
+        "img":"https://www.origastock.com/images/3d-characters/download/14.png"
+      },
+      {
+        "desc": "De la programación me atrae mayormente el desafío constante y pensar soluciones creativas.",
+        "img":"https://www.origastock.com/images/3d-characters/download/14.png"
+      },
+      {
+        "desc": "Tengo mucho amor por las plantas y los perros salchichas.",
+        "img":"https://www.origastock.com/images/3d-characters/download/14.png"
+      }
+    ]
+  }

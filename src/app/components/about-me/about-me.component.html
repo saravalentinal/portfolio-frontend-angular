@@ -1,0 +1,17 @@
+<section>
+
+    <div>
+
+        <h3>{{about.me}}</h3>
+        <h4>{{about.name}} <span>{{about.valentina}}</span> {{about.iAm}} <span>{{about.nation}}</span> {{about.iHave}} <span>{{about.number}}</span> {{about.years}} </h4>
+    
+        <ul>
+            <li  *ngFor="let card of aboutCards">
+                <img [src]="card.img">
+                <p>{{card.desc}}</p>
+            </li>
+        </ul>
+        
+    </div>
+
+</section>
