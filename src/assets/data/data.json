@@ -65,5 +65,28 @@
         "desc": "Tengo mucho amor por las plantas y los perros salchichas.",
         "img":"https://www.origastock.com/images/3d-characters/download/14.png"
       }
-    ]
+    ],
+    "skills": {
+      "titel": "Skills",
+      "cards":
+              [
+                  {
+                    "area":"BACKEND",
+                    "technologies": "NodeJS - Frameworks: Express - MVC - APIs - Docker - Sysadmin"
+                  },
+                  {
+                    "area":"FRONTEND",
+                    "technologies": "HTML - CSS - Sass - EJS - React - Bootstrap"
+                  },
+                  {
+                    "area":"BASE DE DATOS",
+                    "technologies": "MySQL"
+                  },
+                  {
+                    "area":"HERRAMIENTAS",
+                    "technologies": "GIT - Github - Wireframe - Scrum - ClickUp - Trello - Postman - Figma - Photoshop - Illustrator"
+                  }
+                ]
+              }
+
   }
