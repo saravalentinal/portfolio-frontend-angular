@@ -1,30 +1,16 @@
 <section>
-    <h3>Proyectos</h3>
 
-    <article>
-        <img src="">
-        <h4>Carmakers e-commerce</h4>
-        <p>Descripción: Proyecto integrador para el Bootcamp de Digital House.</p>
-        <p>Tecnologías utilizadas: NodeJS - JS - HTML - CSS - React - MySQL</p>
-    </article>
+    <div>
+        <h3>{{projects.titel}}</h3>
 
-    <article>
-        <img src="">
-        <h4>Calculadora Combina2</h4>
-        <p>Descripción: Proyecto personal con
-            el objetivo de incorporar React, internacionalización y dark mode.
-            Calculadora para realizar combinaciones, permutaciones y
-            variaciones.</p>
-        <p>Tecnologías utilizadas: NodeJS - JS - HTML - CSS - React - MySQL</p>
-    </article>
-
-    <article>
-        <img src="">
-        <h4>App de mensajería Palomo</h4>
-        <p>Descripción: simulación de trabajo
-            con NoCountry. Aplicación de
-            mensajería inspirada en Whatsapp.</p>
-        <p>Tecnologías utilizadas: NodeJS - JS - HTML - CSS - React - MySQL</p>
-    </article>
+        <ul>
+            <li  *ngFor="let project of projects.cards">
+                <img [src]="project.video">
+                <h4>{{project.titel}}</h4>
+                <p>{{project.desc}}</p>
+                <p>{{project.technologies}}</p>
+            </li>
+        </ul>
+    </div>
 
 </section>

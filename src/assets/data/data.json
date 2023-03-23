@@ -87,6 +87,41 @@
                     "technologies": "GIT - Github - Wireframe - Scrum - ClickUp - Trello - Postman - Figma - Photoshop - Illustrator"
                   }
                 ]
-              }
-
+              },
+      "projects": {
+        "titel": "Proyectos",
+        "cards":[
+          {
+            "video": "https://www.learntotrade.com.ph/assets-lttph/uploads/2016/04/video-preview-pic.jpg",
+            "titel": "Carmakers e-commerce",
+            "desc": "Descripción: Proyecto integrador para el Bootcamp de Digital House.",
+            "technologies": "Tecnologías utilizadas: NodeJS - JS - HTML - CSS - React - MySQL"
+          },
+          {
+            "video": "https://www.learntotrade.com.ph/assets-lttph/uploads/2016/04/video-preview-pic.jpg",
+            "titel":"Calculadora Combina2",
+            "desc":"Descripción: Proyecto personal con el objetivo de incorporar React, internacionalización y dark mode. Calculadora para realizar combinaciones, permutaciones y variaciones.",
+            "technologies":"Tecnologías utilizadas: NodeJS - JS - HTML - CSS - React - MySQL"
+          },
+          {
+            "video": "https://www.learntotrade.com.ph/assets-lttph/uploads/2016/04/video-preview-pic.jpg",
+            "titel":"App de mensajería Palomo",
+            "desc":"Descripción: simulación de trabajo con NoCountry. Aplicación de mensajería inspirada en Whatsapp.",
+            "technologies":"Tecnologías utilizadas: NodeJS - JS - HTML - CSS - React - MySQL"
+          }
+        ]
+      },
+      "contact": {
+        "titel": "Contacto",
+        "name": "Nombre",
+        "email": "E-Mail",
+        "send": "Enviar",
+        "write": "Escribe un mensaje"
+      },
+      "footer": {
+        "created": "Creado por ",
+        "name": "Valentina ",
+        "in": "en ",
+        "year": "2023"
+      }
   }
