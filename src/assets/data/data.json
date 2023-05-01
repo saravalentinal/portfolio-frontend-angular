@@ -2,25 +2,35 @@
   "header": {
     "name": "VALENTINALATYN"
   },
-    "nav": [
-      {
-        "option": "HOME"
-      },
-      {
-        "option": "ABOUT"
-      },
-      {
-        "option": "SKILLS"
-      },
-      {
-        "option": "PROJECTS"
-      },
-      {
-        "option": "CONTACT"
-      },
-      {
-        "option": "LNG" 
-      }],
+    "nav": {
+
+        "lng": "LNG",
+        "home": "HOME",
+        "homeID": "home",
+        "options" :
+      [
+        {
+          "option": "HOME",
+          "id":"home"
+        },
+        {
+          "option": "ABOUT",
+          "id": "about"
+        },
+        {
+          "option": "SKILLS",
+          "id":"skills"
+        },
+        {
+          "option": "PROJECTS",
+          "id":"projects"
+        },
+        {
+          "option": "CONTACT",
+          "id":"contact"
+        }]
+    },
+
       "landingSection":
       {
         "hello":"Hola, soy ",

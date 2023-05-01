@@ -26,3 +26,36 @@ nav div ul{
 nav ul li{
     padding: 10px;
 }
+
+nav ul li a, nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: #F8F4DB;
+}
+
+nav ul li a{
+    padding-bottom: 5px;
+}
+
+ul li:first-child a:hover, .home.active{
+    border-bottom: #FCBB29 3px solid;
+}
+
+ul li:nth-child(2) a:hover, .about.active{
+    border-bottom: #12B5E5 3px solid;
+}
+
+ul li:nth-child(3) a:hover, .skills.active{
+    border-bottom: #F28BA2 3px solid;
+}
+
+ul li:nth-child(4) a:hover, .projects.active{
+    border-bottom: #FC7529 3px solid;
+}
+
+ul li:nth-child(5) a:hover, .contact.active{
+    border-bottom: #0BA95B 3px solid;
+}
+
+a.active{
+    border-bottom: green solid 4px;
+}
