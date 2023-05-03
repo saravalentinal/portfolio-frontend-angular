@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in',
@@ -9,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LogInComponent implements OnInit {
 
   form:FormGroup;
-  constructor( private formBuilder:FormBuilder ) {
+  constructor( private formBuilder:FormBuilder, private authService:AuthService, private route:Router ) {
     this.form  =this.formBuilder.group (
       {
           email: ['', [Validators.required, Validators.email]],
@@ -32,6 +34,15 @@ export class LogInComponent implements OnInit {
 
   get Password() {
     return this.form.get('password');
+  }
+
+  onSend(event:Event) {
+    event.preventDefault;
+    this.authService.LogIn(this.form.value).subscribe(data=>{
+      console.log("DATA:" + JSON.stringify(data));
+      this.route.navigate(['/portfolio']);
+    });
+
   }
 
 }
