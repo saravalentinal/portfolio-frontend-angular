@@ -11,6 +11,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProyectsComponent,
     ContactComponent,
     FooterComponent,
+    LogInComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
