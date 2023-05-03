@@ -1,22 +1,42 @@
-<form>
+<form [formGroup]="form">
     <div>
         <label>Email</label>
         <input 
             type="email"
+            formControlName="email"
             name="email"
             id="email"
             required
+            [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
         >
+        <div *ngIf="Email?.errors && Email?.touched">
+            <p *ngIf="Email?.hasError('required')">
+                El email es requerido.
+            </p>
+            <p *ngIf="Email?.hasError('email')">
+                El formato del email debe ser válido.
+            </p>
+        </div>
     </div>
 
     <div>
         <label>Contraseña</label>
         <input 
             type="password"
+            formControlName="password"
             name="password"
             id="password"
             required
+            [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
         >
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')">
+                La contraseña es requerida.
+            </p>
+            <p *ngIf="Password?.errors?.['minlength']">
+                La contraseña debe tener 8 o más caracteres.
+            </p>
+        </div>
     </div>
     <button type="submit">Enviar</button>
 </form>
