@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataPortfolio.obtainData().subscribe(data => {
-      console.log(data);
+      console.log("Datos header y nav " + JSON.stringify(data));
       this.headerData = data.header;
       this.navData = data.nav;
 

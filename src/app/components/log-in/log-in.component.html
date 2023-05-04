@@ -1,42 +1,52 @@
-<form [formGroup]="form" (ngSubmit)="onSend($event)">
-    <div>
-        <label>Email</label>
-        <input 
-            type="email"
-            formControlName="email"
-            name="email"
-            id="email"
-            required
-            [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
-        >
-        <div *ngIf="Email?.errors && Email?.touched">
-            <p *ngIf="Email?.hasError('required')">
-                El email es requerido.
-            </p>
-            <p *ngIf="Email?.hasError('email')">
-                El formato del email debe ser válido.
-            </p>
-        </div>
-    </div>
+<section>
 
     <div>
-        <label>Contraseña</label>
-        <input 
-            type="password"
-            formControlName="password"
-            name="password"
-            id="password"
-            required
-            [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
-        >
-        <div *ngIf="Password?.errors && Password?.touched">
-            <p *ngIf="Password?.hasError('required')">
-                La contraseña es requerida.
-            </p>
-            <p *ngIf="Password?.errors?.['minlength']">
-                La contraseña debe tener 8 o más caracteres.
-            </p>
-        </div>
+
+        <h1>Iniciar Sesión</h1>
+
+        <form [formGroup]="form" (ngSubmit)="onSend($event)">
+            <div>
+                <input 
+                    type="email"
+                    formControlName="email"
+                    name="email"
+                    placeholder="Email"
+                    id="email"
+                    required
+                    [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+                >
+                <div *ngIf="Email?.errors && Email?.touched" class="warning">
+                    <p *ngIf="Email?.hasError('required')">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="Email?.hasError('email')">
+                        El formato del email debe ser válido.
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <input 
+                    type="password"
+                    formControlName="password"
+                    name="password"
+                    id="password"
+                    placeholder="Contraseña"
+                    required
+                    [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+                >
+                <div *ngIf="Password?.errors && Password?.touched" class="warning">
+                    <p *ngIf="Password?.hasError('required')">
+                        La contraseña es requerida.
+                    </p>
+                    <p *ngIf="Password?.errors?.['minlength']">
+                        La contraseña debe tener 8 o más caracteres.
+                    </p>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
     </div>
-    <button type="submit">Enviar</button>
-</form>
+
+</section>
