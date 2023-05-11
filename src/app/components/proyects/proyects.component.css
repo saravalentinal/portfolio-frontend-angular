@@ -16,37 +16,59 @@ section div h3{
     padding-top: 10vh;
 }
 
-section div ul{
+.main-ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
     padding: 10px;
-    color: #0F0C0F;
+    color: #F8F4DB;
     list-style: none;
     margin: 0 auto;
     height: 60vh;
     max-width: 80%;
+    text-align: left;
 }
 
-section div ul li{
+.main-li {
     padding:20px;
     border-radius: 15px;
     width: 100%;
     height: 100%;
 }
 
-section div ul li:nth-child(1){
+.main-li:nth-child(1){
     background-color: #7B5EA7;
 }
 
-section div ul li:nth-child(2){
+.main-li:nth-child(2){
     background-color: #0BA95B;
 }
 
-section div ul li:nth-child(3){
+.main-li:nth-child(3){
     background-color: #FC7529;
 }
 
-section div ul li img {
+.main-li img {
     width: 100%;
+}
+
+.ul-tech{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    text-align: left;
+}
+
+.project-titel{
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10% 0 5% 0;
+}
+
+.h4-tech{
+    padding: 10% 0 5% 0;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
 }

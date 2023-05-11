@@ -1,12 +1,43 @@
 <section id="skills">
 
     <div>
-        <h3>{{skills.titel}}</h3>
+        <h3>Skills</h3>
 
-        <ul>
-            <li  *ngFor="let skill of skills.cards">
-                <h4>{{skill.area}}</h4>
-                <p>{{skill.technologies}}</p>
+        <ul class="main-ul">
+            <li class="main-li">
+                <p>{{categories[0].categ_name}}</p>
+                <ul>
+                    <li *ngFor="let skill of skills | filterByCategoryId:1">
+                        {{skill.tech_name}}
+                    </li>
+                </ul>
+            </li>
+
+            <li class="main-li">
+                <p>{{categories[1].categ_name}}</p>
+                <ul>
+                    <li *ngFor="let skill of skills | filterByCategoryId:2">
+                        {{skill.tech_name}}
+                    </li>
+                </ul>
+            </li>
+
+            <li class="main-li">
+                <p>{{categories[2].categ_name}}</p>
+                <ul>
+                    <li *ngFor="let skill of skills | filterByCategoryId:3">
+                        {{skill.tech_name}}
+                    </li>
+                </ul>
+            </li>
+
+            <li class="main-li">
+                <p>{{categories[3].categ_name}}</p>
+                <ul>
+                    <li *ngFor="let skill of skills | filterByCategoryId:4">
+                        {{skill.tech_name}}
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>

@@ -1,16 +1,22 @@
 <section id="projects">
 
     <div>
-        <h3>{{projects.titel}}</h3>
+        <h3>Proyectos</h3>
 
-        <ul>
-            <li  *ngFor="let project of projects.cards">
-                <img [src]="project.video">
-                <h4>{{project.titel}}</h4>
-                <p>{{project.desc}}</p>
-                <p>{{project.technologies}}</p>
+        <ul class="main-ul">
+            <li  *ngFor="let project of projects" class="main-li">
+                <img [src]="project.link">
+                <h4 class="project-titel">{{project.titel}}</h4>
+                <p>{{project.descripcion}}</p>
+
+                <h4 class="h4-tech">Tecnologías utilizadas</h4>
+                <ul class="ul-tech">
+                    <li *ngFor="let technologie of project.technologie_list" class="li-tech">
+                        <p class="p-tech">{{technologie.tech_name}}</p>
+                    </li>
+                </ul>
             </li>
-        </ul>
+        </ul> 
     </div>
 
 </section>

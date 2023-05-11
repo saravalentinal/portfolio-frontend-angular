@@ -13,10 +13,11 @@ export class ProyectsComponent implements OnInit{
   constructor(private dataPortfolio:PortfolioService) {}
 
   ngOnInit(): void{
-    this.dataPortfolio.obtainData().subscribe(data => {
-      console.log(data);
-      this.projects = data.projects;
+    this.dataPortfolio.obtainDataProject().subscribe(data => {
+      this.projects = data;
+      console.log("esta es la data 1 " + this.projects);
     });
+    console.log('hola ramiro' + this.projects)
   }
 
 }

@@ -18,9 +18,8 @@ export class FooterComponent implements OnInit{
   constructor(private dataPortfolio:PortfolioService) {}
 
   ngOnInit(): void{
-    this.dataPortfolio.obtainData().subscribe(data => {
-      console.log(data);
-      this.footer = data.footer;
+    this.dataPortfolio.obtainDataMedia().subscribe(data => {
+      this.footer = data;
     });
   }
 

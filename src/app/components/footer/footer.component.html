@@ -3,11 +3,15 @@
     <div>
 
         <section>
-            <fa-icon [icon]="faGithubAlt" class="icon" style="color: #F8F4DB"></fa-icon>
-            <fa-icon [icon]="faLinkedin" class="icon" style="color: #F8F4DB"></fa-icon>
+            <a href="{{footer[0].link}}" target="_blank">
+                <fa-icon [icon]="faGithubAlt" class="icon" style="color: #F8F4DB"></fa-icon>
+            </a>
+            <a href="{{footer[1].link}}" target="_blank">
+                <fa-icon [icon]="faLinkedin" class="icon" style="color: #F8F4DB"></fa-icon>
+            </a>
         </section>
     
-        <p>{{footer.created}} <span>{{footer.name}}</span> {{footer.in}} <span>{{footer.year}}</span></p>
+        <p>Creado por <span>{{footer[0].person.secondName}} </span>en <span>2023</span></p>
 
     </div>
 

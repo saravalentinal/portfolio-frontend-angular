@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,15 +7,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class ContactComponent implements OnInit{
 
-  contact:any;
-
-  constructor(private dataPortfolio:PortfolioService) {}
+  constructor() {}
 
   ngOnInit(): void{
-    this.dataPortfolio.obtainData().subscribe(data => {
-      console.log(data);
-      this.contact = data.contact;
-    });
   }
 
   onSubmit(){

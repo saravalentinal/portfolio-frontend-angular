@@ -2,7 +2,7 @@
 
     <div>
 
-        <h3>{{contact.titel}}</h3>
+        <h3>Contacto</h3>
 
         <form
             (ngSubmit)="onSubmit()">
@@ -11,7 +11,7 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder={{contact.name}}
+                placeholder="Nombre"
                 required
             >
     
@@ -19,7 +19,7 @@
                 type="email"
                 name="email"
                 id="email"
-                placeholder={{contact.email}}
+                placeholder="Email"
                 required
             >
     
@@ -27,13 +27,13 @@
                 type="textarea"
                 name="msg"
                 id="msg"
-                placeholder={{contact.write}}
+                placeholder="Escribe un mensaje"
                 rows="10"
                 maxlength="2000"
                 required
             ></textarea>
     
-            <button type="submit">{{contact.send}}</button>
+            <button type="submit">Enviar</button>
         </form>
 
     </div>
